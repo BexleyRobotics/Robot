@@ -1,18 +1,18 @@
-
 package org.usfirst.frc.team4753.robot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
-
-import org.usfirst.frc.team4753.robot.Robot;
+import org.usfirst.frc.team4753.robot.RobotMap;
 
 /**
  *
  */
-public class ExampleCommand extends Command {
+public class PullandPush extends Command {
 
-    public ExampleCommand() {
+    public PullandPush() {
         // Use requires() here to declare subsystem dependencies
-        requires(Robot.exampleSubsystem);
+        // eg. requires(chassis);
+    	requires(shootingMotor);
+    	
     }
 
     // Called just before this Command runs the first time
