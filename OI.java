@@ -13,12 +13,13 @@ public class OI {
     // number it is.
     // Joystick stick = new Joystick(port);
     // Button button = new JoystickButton(stick, buttonNumber);
-    public static Joystick stick = new Joystick(1);
-    public static Button button1 = new JoystickButton(stick, 1);
-    public static Button button2 = new JoystickButton(stick, 2);
-    public static Button button3 = new JoystickButton(stick, 3);
-    public static Joystick leftstick = new Joystick(2);
-    public static Joystick rightstick = new Joystick(3);
+   	public static Joystick leftStick = new Joystick(1);
+   	public static Joystick rightStick = new Joystick(2);
+	public static Button button1 = new JoystickButton(leftStick, 1);
+    public static Button button2 = new JoystickButton(leftStick, 2);
+    public static Button button3 = new JoystickButton(leftStick, 3);
+    public static button button4 = new JoystickButton(leftStick, 4);
+
     
     button1.whileHeld(new GrabBar());
     button2.whileHeld(new PullUp());
