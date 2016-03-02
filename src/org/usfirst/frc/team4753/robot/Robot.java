@@ -28,7 +28,8 @@ public class Robot extends IterativeRobot {
     //Talon shooterWheelR = new Talon(6);
     //Talon Angle = new Talon(7);
     
-	double leftspeed
+	double leftspeed;
+	double rightspeed;
     final String defaultAuto = "Default";
     final String customAuto = "My Auto";
     String autoSelected;
