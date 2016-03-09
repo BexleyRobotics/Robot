@@ -11,13 +11,13 @@ public class Pull extends Command {
     public Pull() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	requires(shootingMotor);
+    	
     	
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	shootingM
+    	
     }
 
     // Called repeatedly when this Command is scheduled to run

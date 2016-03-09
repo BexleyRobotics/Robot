@@ -12,9 +12,12 @@ public class driveTrain extends Subsystem {
     Talon motorR1 = new Talon(2);
     Talon motorR2 = new Talon(4);
 
-    public void initDefaultCommand() {
+    public void initDefaultCommand()
+    {
+    	
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+    	
     }
     public void joydriveTankOneStick(Joystick joy){
     	setLeftMotors((joy.getY()/2 + joy.getX()/2));
