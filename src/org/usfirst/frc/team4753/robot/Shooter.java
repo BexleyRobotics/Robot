@@ -1,25 +1,29 @@
 package org.usfirst.frc.team4753.robot;
 
 import edu.wpi.first.wpilibj.Talon;
-import org.usfirst.frc.team4753.robot.RobotMap;
 
-public class Shooter 
+public class Shooter
 {
-	
-	Talon leftmotor = shooterWheelL;
+	Talon leftShootingMotor;
+	Talon rightShootingMotor;
 	double angle;
-    
-    public void setAngle(double ang)
-    {
-    	angle = ang;
-    	
-    }
+	public Shooter (Talon leftMotor, Talon rightMotor)
+	{
+		leftShootingMotor = leftMotor;
+		rightShootingMotor = rightMotor;
+	}
+	
+	public void setAngle(double ang)
+	{
+		angle = ang; 
+		
+	}
+	
+}
+	
     
    
     	
 
     
-    public void runAngler(speed){
-    	Angler.set(speed);
-    }
-}
+   
