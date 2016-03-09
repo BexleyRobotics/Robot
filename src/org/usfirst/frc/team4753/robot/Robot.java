@@ -2,14 +2,16 @@
 package org.usfirst.frc.team4753.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import org.usfirst.frc.team4753.robot.commands.ExampleCommand;
-import org.usfirst.frc.team4753.robot.subsystems.ExampleSubsystem;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import org.usfirst.frc.team4753.robot.subsystems.*;
+import org.usfirst.frc.team4753.robot.RobotMap;
+import org.usfirst.frc.team4753.robot.OI;
 /**
  * The VM is configured to automatically run this class, and to call the
  * functions corresponding to each mode, as described in the IterativeRobot
@@ -34,6 +36,10 @@ public class Robot extends IterativeRobot {
     final String customAuto = "My Auto";
     String autoSelected;
     SendableChooser chooser;
+    driveTrain driver = new driveTrain();
+    OI oi = new OI();
+    
+    
 	
     /**
      * This function is run when the robot is first started up and should be
@@ -80,7 +86,7 @@ public class Robot extends IterativeRobot {
      * This function is called periodically during operator control
      */
     public void teleopPeriodic() {
-    	tankDrive(leftspeed, rightspeed);
+    	driver.joydriveTankOneStick(oi.leftStick);;
         
     }
     

@@ -11,8 +11,9 @@ public class RobotMap {
     // following variables to use with your drivetrain subsystem.
     // public static int leftMotor = 1;
     // public static int rightMotor = 2;
-	Talon motorL1 = new Talon(1);
-	public static int shootingMotor = 5;
+	public Talon shooterWheelL = new Talon(5);
+    public Talon shooterWheelR = new Talon(6);
+    public Talon Angler = new Talon(7);
 	public static int leftMotor = 1;
 	public static int rightMotor = 2;
 	public static int moveMotorLeft = 3;
